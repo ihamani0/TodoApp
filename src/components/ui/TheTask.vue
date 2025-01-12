@@ -9,7 +9,7 @@
                 class="input-checkBox">
             </div>
             <div class="ms-2 text-sm">
-                <p  for="helper-checkbox" class="w-full font-medium italic text-gray-800 dark:text-gray-200"
+                <p  for="helper-checkbox" class="w-full font-medium text-gray-800 dark:text-gray-200"
 
                     v-if="!isEditing" @dblclick="$emit('edit' , {index})"
                     :class="{ 'line-through': task.completed }">
@@ -110,6 +110,6 @@ export default {
     @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600
 }
 .input {
-    @apply bg-gray-50 border outline-none italic border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-[80%] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+    @apply bg-gray-50 border outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-[80%] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
 }
 </style>

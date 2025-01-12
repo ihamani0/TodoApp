@@ -3,7 +3,7 @@
 
         <!-- Header -->
         <div class="p-4 relative">
-            <h1 class="text-3xl m-4 p-4 font-bold text-center italic rotate-3 ">
+            <h1 class="text-3xl m-4 p-4 font-bold text-center  ">
                 ToDo list</h1>
 
             <div class="absolute left-[50rem] top-[3rem] cursor-pointer" @click="ToggleThem()">
@@ -35,7 +35,7 @@
                 <button class="btn-menu" :class="{active:TabStatus==='still'}" @click="changeTAb('still')">Activ</button>
             </div>
 
-            <div class="flex justify-between font-sans italic">
+            <div class="flex justify-between font-sans">
                 <div class="flex justify-between items-center">
                     <input type="checkBox" class="input-checkBox" 
                     @change="toggleCompletedAllTask">
@@ -188,7 +188,7 @@ export default {
 
 <style scoped>
 .btn-menu{
-    @apply mx-1 border dark:border-slate-700 text-gray-800 dark:text-gray-50 px-3 py-2.5 rounded-lg italic
+    @apply mx-1 border dark:border-slate-700 text-gray-800 dark:text-gray-50 px-3 py-2.5 rounded-lg 
                     hover:bg-gray-300 dark:hover:bg-slate-700 transition duration-100 ease-in
 }
 .active{
@@ -197,11 +197,11 @@ export default {
 }
 
 .btn-add {
-    @apply text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-300 dark:border-gray-600 italic
+    @apply text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-300 dark:border-gray-600 
 }
 
 .input {
-    @apply bg-gray-50 border outline-none italic border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-[80%] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+    @apply bg-gray-50 border outline-none  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-[80%] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
 }
 .input-checkBox{
     @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600

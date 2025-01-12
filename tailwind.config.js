@@ -21,7 +21,7 @@ export default {
           border: '#374151',}
       },
       fontFamily:{
-        sans:['Cascadia Mono', 'sans-serif']
+        sans:['sans-serif']
       },
       
     },
